@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Clock } from '../Clock/Clock'
 
 import { GoHome } from "react-icons/go";
 import { IoReceiptOutline } from "react-icons/io5";
@@ -10,7 +11,7 @@ import { LuUserCog } from "react-icons/lu";
 
 export const SideMenu = () => {
     return (
-        <div className='w-1/6 p-6 relative'>
+        <div className='w-1/4 p-6 relative max-w-[300px]'>
             <div className='flex justify-center items-center mb-6'>
                 <figure className='w-32 h-14 rounded-lg overflow-hidden'>
                     <img src="../../public/img/logo.jpg" alt="logo" />
@@ -21,39 +22,52 @@ export const SideMenu = () => {
             </div>
             <ul>
                 <li className='mb-1'>
-                    <NavLink to='/' className='flex items-center gap-2 hover:bg-blue-100 p-3 rounded-lg transition'>
+                    <NavLink to='/' className={({ isActive }) =>
+                        `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
+                        }`
+                    }>
                         <GoHome className='text-xl' />
                         <p>Home</p>
                     </NavLink>
                 </li>
                 <li className='mb-1'>
-                    <NavLink to='/facturacion' className='flex items-center gap-2 hover:bg-blue-100 p-3 rounded-lg transition'>
+                    <NavLink to='/facturacion' className={({ isActive }) =>
+                        `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
+                        }`
+                    }>
                         <IoReceiptOutline className='text-xl' />
-                        <p>Facturacion</p>
+                        <p>Facturación</p>
                     </NavLink>
                 </li>
                 <li className='mb-1'>
-                    <NavLink to='/inventario' className='flex items-center gap-2 hover:bg-blue-100 p-3 rounded-lg transition'>
+                    <NavLink to='/inventario' className={({ isActive }) =>
+                        `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
+                        }`
+                    }>
                         <MdOutlineInventory className='text-xl' />
                         <p>Inventario</p>
                     </NavLink>
                 </li>
                 <li className='mb-1'>
-                    <NavLink to='/gestion-clientes' className='flex items-center gap-2 hover:bg-blue-100 p-3 rounded-lg transition'>
+                    <NavLink to='/gestion-clientes' className={({ isActive }) =>
+                        `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
+                        }`
+                    }>
                         <LuUserCog className='text-xl' />
                         <p>Gestion de Clientes</p>
                     </NavLink>
                 </li>
                 <li className='mb-1'>
-                    <NavLink to='/cuentas-cobrar' className='flex items-center gap-2 hover:bg-blue-100 p-3 rounded-lg transition'>
+                    <NavLink to='/cuentas-cobrar' className={({ isActive }) =>
+                        `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
+                        }`
+                    }>
                         <MdOutlinePendingActions className='text-xl' />
                         <p>Cuentas por Cobrar</p>
                     </NavLink>
                 </li>
             </ul>
-            <div className='border border-solid h-10 grid place-items-center mt-6 rounded-lg border-gray-400 absolute bottom-6 w-full'>
-                3:15 PM | 22-01-2025
-            </div>
+            <Clock />
         </div>
     )
 }

@@ -14,7 +14,7 @@ const AppRoutes = () => {
         { path: '/inventario', element: <Inventory /> },
         { path: '/gestion-clientes', element: <CustomManagement /> },
         { path: '/cuentas-cobrar', element: <AccountsReceivable /> },
-    ])
+    ]);
 
     return routes;
 }

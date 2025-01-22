@@ -7,6 +7,7 @@ import { LuUserCog } from "react-icons/lu";
 
 export const Menu = () => {
     return (
+
         <ul>
             <li className='mb-1'>
                 <NavLink to='/' className={({ isActive }) =>
@@ -54,5 +55,6 @@ export const Menu = () => {
                 </NavLink>
             </li>
         </ul>
+
     )
 }

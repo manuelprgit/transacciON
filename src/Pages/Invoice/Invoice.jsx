@@ -8,14 +8,12 @@ export const Invoice = () => {
     return (
         <>
             <ModuleHeader icon={<CiReceipt />} title="Creación de Facturas" />
-            <div className="flex">
+            <div className="flex w-full gap-2">
                 <div className="w-2/3">
                     <InputSearch />
                     <ArticleTable />
                 </div>
-                <div>
-                    <PaymentContent />
-                </div>
+                <PaymentContent />
             </div>
         </>
     )

@@ -46,12 +46,30 @@ const articles = [
         price: 44.00,
         quantity: 1
     },
+    {
+        id: 8,
+        name: 'Artículo 7',
+        price: 44.00,
+        quantity: 1
+    },
+    {
+        id: 9,
+        name: 'Artículo 7',
+        price: 44.00,
+        quantity: 1
+    },
+    {
+        id: 10,
+        name: 'Artículo 7',
+        price: 44.00,
+        quantity: 1
+    },
 ]
 
 export const ArticleTable = () => {
     return (
         <>
-            <div className="overflow-x-auto ">
+            <div className="overflow-x-auto overflow-y-auto h-[500px]">
                 <table className="min-w-full bg-white border border-gray-200">
                     <thead>
                         <tr>
@@ -82,8 +100,8 @@ export const ArticleTable = () => {
                             />
                         ))}
                     </tbody>
-                </table>
-            </div>
+                </table >
+            </div >
         </>
     )
 }

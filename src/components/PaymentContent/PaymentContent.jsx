@@ -2,6 +2,6 @@ import React from 'react'
 
 export const PaymentContent = () => {
     return (
-        <div>PaymentContent</div>
+        <div className=''>PaymentContent</div>
     )
 }

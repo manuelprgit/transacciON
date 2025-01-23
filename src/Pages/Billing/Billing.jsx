@@ -8,7 +8,8 @@ const options = [
         id: 1,
         icon: <CiReceipt />,
         title: "Creacion de Facturas",
-        description: "Genera y emite facturas de ventas de manera rápida y sencilla"
+        linkOption: "/invoice",
+        description: "Generar y Emitir facturas"
     }
 ]
 

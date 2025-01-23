@@ -6,6 +6,7 @@ import { Billing } from '../../Pages/Billing/Billing'
 import { Inventory } from "../../Pages/Inventory/Inventory";
 import { CustomManagement } from "../../Pages/CustomManagement/CustomManagement";
 import { AccountsReceivable } from "../../Pages/AccountsReceivable/AccountsReceivable";
+import { Invoice } from "../../Pages/Invoice/Invoice";
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -14,6 +15,9 @@ const AppRoutes = () => {
         { path: '/inventario', element: <Inventory /> },
         { path: '/gestion-clientes', element: <CustomManagement /> },
         { path: '/cuentas-cobrar', element: <AccountsReceivable /> },
+
+        //Opciones
+        { path: '/invoice', element: <Invoice /> },
     ]);
 
     return routes;

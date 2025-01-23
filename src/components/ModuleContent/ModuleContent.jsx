@@ -4,6 +4,7 @@ import { OptionCard } from '../../components/OptionCard/OptionCard'
 
 
 export const ModuleContent = ({ icon, title, options }) => {
+
     return (
         <>
             <ModuleHeader
@@ -15,6 +16,7 @@ export const ModuleContent = ({ icon, title, options }) => {
                 {options.map(option => (
                     <OptionCard
                         key={option.id}
+                        linkOption={option.linkOption}
                         icon={option.icon}
                         title={option.title}
                         description={option.description}

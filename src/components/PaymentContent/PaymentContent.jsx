@@ -39,7 +39,7 @@ export const PaymentContent = () => {
                         <IoCashOutline className='text-xl' />
                         <p>Efectivo</p>
                     </div>
-                    <input type='text' className='outline-none text-right border-b border-gray-400' placeholder='0.00' />
+                    <input type='text' className='outline-none text-right border-b border-gray-400 px-2' placeholder='0.00' />
                 </div>
 
                 <div className='flex h-10 justify-between items-center border border-solid px-4 min-w-80 rounded-lg border-gray-300 mb-4'>

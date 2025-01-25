@@ -1,7 +1,8 @@
 import React from 'react'
 import { IoCashOutline } from "react-icons/io5";
 import { CiCreditCard1, CiMoneyCheck1 } from "react-icons/ci";
-import { TbUserDollar } from "react-icons/tb";
+import { TbUserDollar, TbReportMoney } from "react-icons/tb";
+
 
 import { formatMoney } from '../../helpers/formatterNumber';
 
@@ -68,7 +69,10 @@ export const PaymentContent = () => {
 
             </div>
             <div className='grid place-content-center'>
-                <button className='h-10 w-40 bg-green-300 rounded-lg border border-solid transition active:bg-green-400 font-semibold text-green-900'>Cobrar</button>
+                <button className='h-10 w-40 bg-green-300 rounded-lg border border-solid transition active:bg-green-400 font-semibold text-green-900 flex justify-center items-center gap-1'>
+                    <TbReportMoney className='text-xl' />
+                    Cobrar
+                </button>
             </div>
         </div>
     )

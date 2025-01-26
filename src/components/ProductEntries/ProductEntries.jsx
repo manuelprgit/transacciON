@@ -1,5 +1,5 @@
 import React from 'react'
-import { LuPackageSearch, LuSquareUser, LuUserCheck, LuUserCog, LuUserRound, LuUserRoundCheck } from 'react-icons/lu'
+import { LuPackageSearch } from 'react-icons/lu'
 import { LiaUserTieSolid } from "react-icons/lia";
 
 
@@ -10,7 +10,6 @@ export const ProductEntries = () => {
                 <div className='flex justify-end gap-4 absolute right-6'>
                     <button className='bg-green-500 active:bg-green-600 text-white p-2 px-6 rounded-lg'>Guardar</button>
                     <button className='bg-gray-500 active:bg-gray-600 text-white p-2 px-6 rounded-lg'>Limpiar</button>
-                    <button className='bg-red-500 active:bg-red-600 text-white p-2 px-6 rounded-lg'>Volver</button>
                 </div>
 
                 <div className='grid grid-cols-4 gap-6'>

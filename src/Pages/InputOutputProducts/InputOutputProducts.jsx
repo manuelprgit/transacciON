@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 import { HiOutlineLogout, HiOutlineLogin } from "react-icons/hi";
 import { ModuleHeader } from '../../components/ModuleHeader/ModuleHeader'
 import { IoIosRepeat } from 'react-icons/io'
+import { ProductEntries } from '../../components/ProductEntries/ProductEntries';
 
 export const InputOutputProducts = () => {
 
-    const [screen, setScreen] = useState(<></>)
+    const [screen, setScreen] = useState(<></>);
 
     const getScreen = (isInput) => {
 
         (isInput)
-            ? setScreen(<div>Input</div>)
+            ? setScreen(<ProductEntries />)
             : setScreen(<div>Output</div>)
 
     }

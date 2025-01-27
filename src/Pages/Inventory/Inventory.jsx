@@ -14,19 +14,19 @@ const options = [
         description: "Controla y gestiona el inventario de productos"
     },
     {
+        id: 3,
+        icon: <AiOutlineProduct />,
+        title: "Mantenimiento de Productos",
+        linkOption: "/mantenimiento-productos",
+        description: "Creación y modificación de productos"
+    },
+    {
         id: 2,
         icon: <IoIosRepeat />,
         title: "Entrada y Salida de Mercancias",
         linkOption: "/entrada-salida-mercancias",
         description: "Control de entrada y salida de mercancias"
     },
-    {
-        id: 3,
-        icon: <AiOutlineProduct />,
-        title: "Mantenimiento de Productos",
-        linkOption: "/mantenimiento-productos",
-        description: "Creación y modificación de productos"
-    }
 ]
 
 export const Inventory = () => {

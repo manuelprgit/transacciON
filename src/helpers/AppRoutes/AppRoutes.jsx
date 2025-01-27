@@ -11,6 +11,7 @@ import { MasterInventory } from "../../Pages/MasterInventory/MasterInventory";
 import { InputOutputProducts } from "../../Pages/InputOutputProducts/InputOutputProducts";
 import { PageNotFound } from "../../Pages/PageNotFound/PageNotFound";
 import { ProductManagement } from "../../Pages/ProductManagement/ProductManagement";
+import { ClientManagement } from "../../Pages/ClientManagement/ClientManagement";
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -28,6 +29,10 @@ const AppRoutes = () => {
         { path: '/control-inventario', element: <MasterInventory /> },
         { path: '/entrada-salida-mercancias', element: <InputOutputProducts /> },
         { path: '/mantenimiento-productos', element: <ProductManagement /> },
+
+        //Opciones de Cuentas por Cobrar
+        { path: '/mantenimiento-clientes', element: <ClientManagement /> },
+
     ]);
 
     return routes;

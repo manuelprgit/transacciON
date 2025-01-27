@@ -7,8 +7,11 @@ export const Clock = () => {
         const updateClock = () => {
             const now = new Date();
             const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            const date = now.toLocaleDateString();
-            setCurrentTime(`${time} | ${date}`);
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1;
+            const day = now.getDate();
+
+            setCurrentTime(`${time} | ${day}-${month}-${year}`);
         };
 
         updateClock();

@@ -29,14 +29,14 @@ export const InputOutputProducts = () => {
             />
             <div className='flex justify-center gap-10'>
                 <button
-                    className={`h-10 w-40 bg-green-${active ? '500 text-white' : '300'} rounded-lg border border-solid transition active:bg-green-400 font-semibold  flex justify-center items-center gap-1`}
+                    className={`h-10 w-40 bg-green-${active ? '500 text-white underline h-12 w-44' : '300'} rounded-lg border border-solid transition active:bg-green-400 font-semibold  flex justify-center items-center gap-1`}
                     onClick={() => getScreen(true)}
                 >
                     <HiOutlineLogout className='text-xl' />
                     Entrada
                 </button>
                 <button
-                    className={`h-10 w-40 bg-red-${active === false ? '500 text-white' : '300'} rounded-lg border border-solid transition active:bg-red-400 font-semibold flex justify-center items-center gap-1`}
+                    className={`h-10 w-40 bg-red-${active === false ? '500 text-white underline h-12 w-44' : '300'} rounded-lg border border-solid transition active:bg-red-400 font-semibold flex justify-center items-center gap-1`}
                     onClick={() => getScreen(false)}
                 >
                     <HiOutlineLogin className='text-xl' />

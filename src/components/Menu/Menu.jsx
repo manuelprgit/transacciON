@@ -37,15 +37,6 @@ export const Menu = () => {
                 </NavLink>
             </li>
             <li className='mb-1'>
-                <NavLink to='/gestion-clientes' className={({ isActive }) =>
-                    `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
-                    }`
-                }>
-                    <LuUserCog className='text-xl' />
-                    <p>Gestion de Clientes</p>
-                </NavLink>
-            </li>
-            <li className='mb-1'>
                 <NavLink to='/cuentas-cobrar' className={({ isActive }) =>
                     `flex items-center gap-2 p-3 rounded-lg transition hover:bg-blue-100 ${isActive ? 'bg-blue-300' : ''
                     }`

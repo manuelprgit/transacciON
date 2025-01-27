@@ -1,7 +1,7 @@
 import React from 'react'
 import { ModuleContent } from '../../components/ModuleContent/ModuleContent'
 import { FaRegUser } from 'react-icons/fa6'
-import { LuUserCog } from 'react-icons/lu'
+import { TbHistory } from "react-icons/tb";
 import { MdOutlinePendingActions } from 'react-icons/md'
 
 const options = [
@@ -11,6 +11,13 @@ const options = [
         title: "Mantenimiento de Clientes",
         linkOption: "/mantenimiento-clientes",
         description: "Administra la información de los clientes"
+    },
+    {
+        id: 2,
+        icon: <TbHistory />,
+        title: "Historico de Clientes",
+        linkOption: "/historico-cliente",
+        description: "Visualizacion del historico de los clientes"
     }
 ]
 

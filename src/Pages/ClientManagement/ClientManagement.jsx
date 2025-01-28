@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineProduct } from 'react-icons/ai';
 import { ModuleHeader } from '../../components/ModuleHeader/ModuleHeader';
-import { FaRegUser } from 'react-icons/fa';
+import { FaRegUser, FaSearch } from 'react-icons/fa';
 
 export const ClientManagement = () => {
   return (
@@ -15,6 +15,10 @@ export const ClientManagement = () => {
       >
         <div className='flex justify-end gap-4 absolute right-6'>
           <button className='bg-green-500 active:bg-green-600 text-white p-2 px-6 rounded-lg'>Guardar</button>
+          <button className='bg-blue-500 active:bg-blue-600 text-white p-2 px-6 rounded-lg flex gap-2 items-center'>
+            <FaSearch />
+            Buscar
+          </button>
           <button className='bg-gray-500 active:bg-gray-600 text-white p-2 px-6 rounded-lg'>Limpiar</button>
         </div>
         <div className='mb-6'>

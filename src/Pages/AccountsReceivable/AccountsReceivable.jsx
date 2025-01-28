@@ -1,8 +1,9 @@
 import React from 'react'
 import { ModuleContent } from '../../components/ModuleContent/ModuleContent'
-import { FaRegUser } from 'react-icons/fa6'
-import { TbHistory } from "react-icons/tb";
+import { FaCcPaypal, FaRegUser } from 'react-icons/fa6'
+import { TbHistory, TbPaywall } from "react-icons/tb";
 import { MdOutlinePendingActions } from 'react-icons/md'
+import { CiMoneyCheck1 } from 'react-icons/ci';
 
 const options = [
     {
@@ -15,9 +16,16 @@ const options = [
     {
         id: 2,
         icon: <TbHistory />,
-        title: "Historico de Clientes",
-        linkOption: "/historico-cliente",
-        description: "Visualizacion del historico de los clientes"
+        title: "Cuentas Pendientes",
+        linkOption: "/cuentas-pendientes",
+        description: "Visualizacion de Cuentas Pendientes"
+    },
+    {
+        id: 3,
+        icon: <CiMoneyCheck1 />,
+        title: "Cuentas Pendientes",
+        linkOption: "/cuentas-pendientes",
+        description: "Listado de cuentas pendientes"
     }
 ]
 

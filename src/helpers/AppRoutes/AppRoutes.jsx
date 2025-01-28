@@ -12,6 +12,7 @@ import { InputOutputProducts } from "../../Pages/InputOutputProducts/InputOutput
 import { PageNotFound } from "../../Pages/PageNotFound/PageNotFound";
 import { ProductManagement } from "../../Pages/ProductManagement/ProductManagement";
 import { ClientManagement } from "../../Pages/ClientManagement/ClientManagement";
+import { PendingAccounts } from "../../Pages/PendingAccounts/PendingAccounts";
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -32,6 +33,7 @@ const AppRoutes = () => {
 
         //Opciones de Cuentas por Cobrar
         { path: '/mantenimiento-clientes', element: <ClientManagement /> },
+        { path: '/cuentas-pendientes', element: <PendingAccounts /> },
 
     ]);
 
